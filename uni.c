@@ -203,9 +203,30 @@
 // -----------------------
 // while do - evaluate code once before loop
 // do {} wile(condition);
-// -----------------------
+// -------------------------
 // de morgan's law
 // not (A and B) equals not A or not B
 // not (A or B)  equals not A and not B
 // P and (Q or D) equals (P and Q) or (P and D)
 // P or (Q and D) equals (P or Q) and (P or D)
+// -----------------------
+// all bits on	
+// ~0 or -1
+// one bit on in position n, all others off
+// 1 << n
+// n least significant bits on, all others off
+// (1 << n) - 1
+// most significant bit on, all others off
+// (1 << 31)
+// k most significant bits on, all others off
+// (~0 << (32 - k)) or ~(~0U >> k)
+// ------------------------
+// 1 << x	2 to the power x
+// ~x + 1
+// -x, arithmetic negation
+// x >> 31
+// -1 if x is negative, 0 otherwise
+// x &= (x - 1)
+// clears lowest "on" bit in x
+// (x ^ y) < 0
+// true if x and y have opposite signs
